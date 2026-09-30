@@ -1,0 +1,9 @@
+const baseUrl = 'https://developer-project-starter.vonnewmandevs.chatgpt.site';
+export const dynamic = 'force-static';
+
+export default function robots() {
+  return {
+    rules: { userAgent: '*', allow: '/' },
+    sitemap: `${baseUrl}/sitemap.xml`
+  };
+}
